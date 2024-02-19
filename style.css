@@ -1,0 +1,143 @@
+body {
+    background-image: url(Assets/myphoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #E8AA42;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    align-self: center;
+    margin-bottom: -20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: center;
+    width: 250px;
+}
+
+button {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 850;
+    border-radius: 40px;
+    color: white;
+    border: 3px solid black;
+}
+
+#forStyle {
+    background-color: rgba(232, 170, 66, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 3px solid black;
+}
+
+#par {
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+} 
+
+#addTip {
+    background-color: #4F200D;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#tip {
+    display: none;
+}
+
+#btn {
+    background-color: #FF8400;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+} 
+
+#showTotalAmount {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+}
+
+#billSplit, #totalTip, #total {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(158, 111, 33, 0.9);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid black;
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#reviewForm {
+    background-color: rgba(232, 170, 66, 0.7);
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+#forReview, #forEmail {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+#reviewInput{
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    margin: 10px;
+}
+
+#btnReview {
+    align-self: center;
+    background-color: #FF8400;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+    width: 50%;
+    margin: 10px;
+}
+
+@media all and (max-width: 800px) {
+    #container {
+        width: 450px;
+    }
+}
+

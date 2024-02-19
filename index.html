@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/bill.png" />
+    <title>SplitBill</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Let's Split Our Bill!!</h1>
+        <form>
+            <div id="forStyle">
+                <p id="par">Bill</p>
+                <span><input type="text" placeholder="Bill..." id="bill"></span>
+            </div>
+            <div id="forStyle">
+                <p id="par">Number of people</p>
+                <span><input type="text" placeholder="How many people..." id="people"></span>
+            </div>
+            <div id="forStyle">
+            <p id="par">Did you like our service?</p>
+                <div>
+                    <button id="addTip">Add a tip!</button>
+                    <select id="tip">
+                        <option disabled>Select an option</option>
+                        <option value="0.30">Wow! 30%</option>
+                        <option value="0.20">Good service! 20%</option>
+                        <option value="0.10">It was OK! 10%</option>
+                        <option value="0.00" selected>No tip!</option>
+                    </select>
+                    <button id="btn">Calculate</button>
+                </div>
+            </div>
+        </form>
+        <div id="showTotalAmount">
+            <div id="billSplit">
+                <p>Bill</p>
+                <span>$</span>
+                <span id="devidedBill"></span>
+                <span>Per person</span>
+            </div>
+            <div id="totalTip">
+                <p>Tip</p>
+                <span>$</span>
+                <span id="devidedTip"></span>
+                <span>Per person</span>
+            </div>
+            <div id="total">
+                <p>Total</p>
+                <span>$</span>
+                <span id="billAndTip"></span>
+                <span>Per person</span>
+            </div>
+        </div>
+        <form id="reviewForm" action="https://formspree.io/f/xdovvzgg" method="POST">
+            <input type="hidden" name="_language" value="en" />
+            <label id='forReview'>Here you can write your opinion about us</label>
+            <textarea id="reviewInput" for="review" placeholder="Type here..." required></textarea>
+            <label id="forEmail" required for="email">Your Email</label>
+            <input required placeholder="Your email..." name="Email" id="email" type="email">
+            <button id="btnReview" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
