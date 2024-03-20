@@ -2,6 +2,10 @@
 
 Welcome to SplitBill! This web application helps you split bills evenly among a group of people, including optional tips.
 
+## Live Demo
+
+You can check out the live version of this website [here](https://split-my-bill-app.netlify.app/).
+
 ## Table of Contents
 - [About the Project](#about-the-project)
 - [Usage](#usage)
